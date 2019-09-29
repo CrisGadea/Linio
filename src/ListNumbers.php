@@ -57,4 +57,11 @@ class ListNumbers
 		}
 		return $this->list_of_numbers;
 	}
+
+	public function printNumbers($list)
+	{
+		foreach ($list as $number) {
+			echo $number."\n";
+		}
+	}
 }

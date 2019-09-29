@@ -10,8 +10,12 @@ class ListNumbersTest extends TestCase
 {
 	function testGenerateNumbers()
 	{
+		// Generate the instance 
 		$instance = new ListNumbers();
+		// Expected param
 		$expected = $instance->generateNumbers();
+		//Print in console the list of numbers
+		$instance->printNumbers($expected);
 
 		$actual = [];
 		$number = 1;
@@ -32,6 +36,7 @@ class ListNumbersTest extends TestCase
 			}
 			$number++;
 		}
+		//Validate if expected array is equals to the actual array
 		$this->assertEquals($expected,$actual);
 	}
 }
