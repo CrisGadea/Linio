@@ -6,7 +6,7 @@ use Src\ListNumbers;
 
 use PHPUnit\Framework\TestCase;
 
-class challengeTest extends TestCase
+class ListNumbersTest extends TestCase
 {
 	function testGenerateNumbers()
 	{
